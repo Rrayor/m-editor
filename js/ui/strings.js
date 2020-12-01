@@ -1,0 +1,16 @@
+export default {
+    controllerClass: 'controller',
+    inputGroupClass: 'input-group',
+    checkboxesClass: 'checkboxes',
+    radiosClass: 'radios',
+    formatterClass: 'formatter',
+    formatterChangeClass: 'formatter-change',
+    modalClass: 'modal',
+    contextModalClass: 'context-modal',
+    dataTarget: 'data-target',
+    dataControl: 'data-control',
+    dataCommand: 'data-command',
+    dataValue: 'data-value',
+    dataOffsetTop: 'data-offset-top',
+    dataOffsetLeft: 'data-offset-left',
+}

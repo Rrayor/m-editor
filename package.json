@@ -1,0 +1,12 @@
+{
+  "name": "m-editor",
+  "version": "1.0.0",
+  "description": "text editor for m-books project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Simon",
+  "license": "ISC",
+  "dependencies": {}
+}

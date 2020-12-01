@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <title>M-Editor</title>
+</head>
+
+<body>
+    <nav class="nav-horizontal" id="nav_editor">
+        <button class="button light formatter" data-command="bold">
+            <strong>B</strong>
+        </button>
+        <button class="button light formatter" data-command="italic">
+            <i>I</i>
+        </button>
+        <button class="button light formatter" data-command="underline">
+            <u>U</u>
+        </button>
+        <select class="formatter-change" data-command="fontSize">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        <button class="button light formatter" data-command="justifyLeft">
+            Left
+        </button>
+        <button class="button light formatter" data-command="justifyCenter">
+            Center
+        </button>
+        <button class="button light formatter" data-command="justifyRight">
+            Right
+        </button>
+        <button class="button light formatter" data-command="justifyFull">
+            Justify
+        </button>
+    </nav>
+    <button class="button" id="btn_show_modal" data-control="show-modal" data-target="modal">Show Modal</button>
+
+    <section class="paper" id="page" contenteditable="true"></section>
+
+    <div class="modal context-modal" id="modal">
+        <div class="modal-background controller" data-control="hide-modal" data-target="modal"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Modal Title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group" id="name">
+                    <input type="text" name="first_name" id="first_name">
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="input-group radios" id="gender">
+                    <input type="radio" name="gender" id="gender_male" value="male">Male
+                    <input type="radio" name="gender" id="gender_female" value="female">Female
+                </div>
+                <div class="input-group checkboxes" id="accept">
+                    <input type="checkbox" id="accept_pp" value="pp">Accept Privacy Policy
+                    <input type="checkbox" id="acept_news" value="news">Receive News
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="button controller" data-control="hide-modal" data-target="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
